@@ -30,7 +30,6 @@ esac
 rm -f /tmp/$logfile.gz
 
 # Jython para monitoracao de weblogic
-# By Danilo Fantinato
 import time
 from time import gmtime, strftime, localtime
 from java.util.regex import *
