@@ -1,0 +1,6 @@
+java weblogic.Admin -adminurl t3://adminserverl:port -username <adminusername> -password <adminpassword> -userconfigfile userconfig -userkeyfile userkey -STOREUSERCONFIG
+
+storeUserConfig('/usr/home/user1/configfile.secure', '/usr/home/user1/keyfile.secure')
+
+
+java weblogic.Admin -adminurl t3://adminserverl:port -userconfigfile userconfig -userkeyfile userkey -GETSTATE
