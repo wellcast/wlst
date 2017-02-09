@@ -69,9 +69,9 @@ cd('Servers');
 server=cmo.getServers();
 startEdit();#Alteracao do server start
 for x in server:
-if x.getName() != AdminSrv:
+ if x.getName() != AdminSrv:
   cd('/Servers/'+x.getName()+'/ServerStart/'+x.getName());
-  if x.getName().startswith('soa'):
+  if x.getName().startswith('ccr_soa'):
    set('Arguments',arguments+argswka+' -Dweblogic.Stdout='+logPath+x.getName()+'/'+x.getName()+'.out'+' -Dweblogic.Stderr='+logPath+x.getName()+'/'+x.getName()+'.out');
   else:
    set('Arguments',arguments+' -Dweblogic.Stdout='+logPath+x.getName()+'/'+x.getName()+'.out'+' -Dweblogic.Stderr='+logPath+x.getName()+'/'+x.getName()+'.out');
